@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- always to keep it in the ActionBar at all times -->
+
+    <item
+        android:id="@+id/reset"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="always|withText"
+        android:title="resetting"/>
+
+    <item
+        android:id="@+id/about"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="never"
+        android:title="About Us">
+    </item>
+    <item
+        android:id="@+id/tips"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="never"
+        android:title="Tips and Tricks ">
+    </item>
+    <item
+        android:id="@+id/notes"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="never"
+        android:title="Exercise Notes">
+    </item>
+
+    <item
+        android:id="@+id/feedback"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="never"
+        android:title="Feedback">
+    </item>
+
+    <item
+        android:id="@+id/exit" app:showAsAction="never" android:title="exit">
+    </item>
+</menu>
+

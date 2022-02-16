@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    android:fillViewport="true"
+    app:layout_constraintTop_toBottomOf="@+id/textView2"
+    tools:layout_editor_absoluteX="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark"
+        tools:context=".AboutActivity">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="405dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/light"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="New Features"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/add"
+            android:layout_width="406dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading">
+
+            <ImageView
+                android:id="@+id/addicon"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/addtxt"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:paddingLeft="0dp"
+                android:text="Current Office Location"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="406dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mapimg">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_phone_android_24" />
+
+            <TextView
+                android:id="@+id/apps"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="0dp"
+                android:text="More Apps"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mapimg"
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/maped"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:color="@color/white"
+            app:barrierDirection="top"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+
+        <LinearLayout
+            android:id="@+id/call"
+            android:layout_width="406dp"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <ImageView
+                android:id="@+id/callicon"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_local_phone_24" />
+
+            <TextView
+                android:id="@+id/calltxt"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="0dp"
+                android:text="Call us 0900-786-01"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notis"
+            android:layout_width="406dp"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/call">
+
+            <ImageView
+                android:id="@+id/notiicon"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_notifications_active_24" />
+
+            <TextView
+                android:id="@+id/notitxt"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:paddingLeft="0dp"
+                android:text="Latest Updates"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

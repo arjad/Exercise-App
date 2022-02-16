@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/dark"
+tools:context=".HomesActivity">
+
+<ImageView
+    android:id="@+id/splash_img"
+    android:layout_width="410dp"
+    android:layout_height="433dp"
+    android:layout_marginTop="4dp"
+    android:src="@drawable/logo"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/titlepage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:gravity="center"
+    android:lineSpacingExtra="1dp"
+    android:text="Are you becoming the person you want to be?"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="27sp"
+    app:fontFamily="sans-serif"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/splash_img" />
+
+<View
+    android:id="@+id/bgprogress"
+    android:layout_width="414dp"
+    android:layout_height="60dp"
+    android:background="@color/light"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:background="@color/light"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="used when i publish it "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnreg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_width="415dp"
+        android:layout_height="56dp"
+        android:background="@color/light"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Lets Start"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnlogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

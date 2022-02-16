@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Arjad Gym</string>
+
+    <string name="unit">Cm</string>
+    <string name="femaletext">Female</string>
+    <string name="age">Age</string>
+    <string name="startingheight">170</string>
+    <string name="startingweight">55</string>
+    <string name="startingage">22</string>
+    <string name="todo">TODO</string>
+    <string name="height">Height</string>
+    <string name="calculate_your_bmi">Calculate Your BMI</string>
+    <string name="weight">Weight</string>
+    <string name="male">Male</string>
+
+    <string name="notification_title">You are now our Subscriber</string>
+    <string name="notification_text">We will send you the latest updates later on</string>
+    <string name="update">Mark As Read</string>
+    <string name="notify_me">Notify Me!</string>
+    <string name="update_me">Update Me!</string>
+    <string name="cancel_me">Cancel Me!</string>
+    <string name="notification_updated">Notification Updated!</string>
+    <string name="notification_channel_name">Mascot Notification</string>
+    <string name="notification_channel_description">Notification from Mascot</string>
+
+</resources>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/dark"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".ExerciseActivity"
+  >
+
+
+    <ListView
+            android:id="@+id/simpleListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/material_blue_grey_800"
+            android:dividerHeight="1dp"
+            tools:ignore="MissingConstraints" />
+
+    <!--    chest -->
+
+    <LinearLayout
+        android:id="@+id/fitone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:src="@drawable/chest" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chestbtn_vid"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Chest Workout"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fitonedesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="3 To 13 Minutes"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:id="@+id/fittwo"
+            app:layout_constraintTop_toBottomOf="@+id/fitone"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="110dp"
+                android:src="@drawable/bicep"/>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp">
+
+                <TextView
+                    android:id="@+id/bicepbtn_vid"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Bicep Workout"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="4 To 14 Minutes"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/fittwodesc"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    shouler-->
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:id="@+id/fitthree"
+            app:layout_constraintTop_toBottomOf="@+id/fittwo"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="110dp"
+                android:src="@drawable/shoulder"/>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp">
+
+                <TextView
+                    android:id="@+id/fitthreetitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:text="Shoulder Workout"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="5 To 15 Minutes"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/fitthreedesc"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--    leg-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:id="@+id/leglo"
+            app:layout_constraintTop_toBottomOf="@+id/fitthree"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="110dp"
+                android:src="@drawable/leg"/>
+
+
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp">
+
+                <TextView
+                    android:id="@+id/fitfourtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:text="Leg Workout"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/fitfourdesc"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="10 To 25 Minutes"
+                    android:layout_marginTop="5dp"
+                   />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    cardio-->
+        <LinearLayout
+            android:id="@+id/cardiolo"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/leglo"
+            tools:layout_editor_absoluteY="422dp">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:src="@drawable/runers" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fitfourtitles"
+                    android:layout_width="197dp"
+                    android:layout_height="33dp"
+                    android:text=" Cardio Workout"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/fitfourdescs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Variable Timings"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <!--    bmi -->
+    <LinearLayout
+        android:id="@+id/bmilo"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardiolo"
+        tools:layout_editor_absoluteY="422dp">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:src="@drawable/bmii" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bmititle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" Calculate BMI"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/bgprogress"
+        android:layout_width="410dp"
+        android:layout_height="72dp"
+        android:background="@color/light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/train"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Personal Training"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
